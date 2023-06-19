@@ -33,6 +33,16 @@
         section {
             padding: 20px;
         }
+        
+        /* CSS styles for the merged section */
+        #profile-about-section {
+            display: flex;
+            align-items: center;
+        }
+        
+        #profile-about-section .profile-photo {
+            margin-right: 20px;
+        }
     </style>
 </head>
 <body>
@@ -48,14 +58,14 @@
         </nav>
     </header>
     
-    <section id="profile-section">
-        <h2>Profile</h2>
-        <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
-    </section>
-    
-    <section id="about-section">
-        <h2>About</h2>
-        <p>Welcome to my website. This is a brief description of what my website is about.</p>
+    <section id="profile-about-section">
+        <div>
+            <img src="profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+        </div>
+        <div>
+            <h2>About</h2>
+            <p>Welcome to my website. This is a brief description of what my website is about.</p>
+        </div>
     </section>
     
     <section id="services-section">
