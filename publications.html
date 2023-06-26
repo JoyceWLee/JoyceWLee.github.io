@@ -3,6 +3,31 @@
 <head>
     <title>Publications</title>
     <style>
+        /* CSS styles for the header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        /* CSS styles for the navigation */
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        /* CSS styles for the sections */
+        section {
+            padding: 20px;
+        }
+
         /* CSS styles for the publication container */
         .publication {
             display: flex;
@@ -33,16 +58,23 @@
             margin-top: 10px;
         }
         
+        /* CSS styles for the publication authors */
+        .publication .author {
+            margin-top: 1px;
+            color: black; /* Change text color */
+            font-size: 13px; /* Change font size to 13 pixels */
+        }
+        
         /* CSS styles for the publication category */
         .publication .category {
             display: inline-block;
-            padding: 5px 10px;
+            padding: 2px 5px;
             margin-top: 5px;
             margin-right: 5px; /* Add margin right */
             font-size: 14px;
             font-weight: bold;
             color: #fff;
-            border-radius: 4px;
+            border-radius: 2px;
         }
         
         /* CSS styles for the journal category */
@@ -59,13 +91,32 @@
         .publication .conference {
             background-color: #e91e63;
         }
+        /* CSS styles for the publication links */
+        .publication .link {
+            background-color: #FFFFFF;
+            border: 0.5px solid #000000;
+        }
+        /* CSS styles for the honors */
+        .publication .honor {
+            background-color: #FFBF00;
+        }
     </style>
 </head>
 <body>
-    <h1>Publications</h1>
+    <header>
+        <h1>Publications</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="publications.html#">Publications</a></li>
+                <li><a href="fun.html">Fun Facts</a></li>
+            </ul>
+        </nav>
+    </header>
     
     <div class="publication">
-        <img src="SPIE.png" alt="Publication 1" class="photo">
+        <img src="EDIQA.png" alt="Publication 1" class="photo">
         <div class="details">
             <h2 class="title">Publication 1<span class="category journal">Journal</span></h2>
             <p class="description">This is the description of Publication 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -73,19 +124,32 @@
     </div>
     
     <div class="publication">
-        <img src="D2IQA-GIF.gif" alt="Publication 2" class="photo">
+        <img src="D2IQA-GIF.gif" alt="D2IQA" class="photo">
         <div class="details">
-            <h2 class="title">Publication 2<span class="category patent">Patent</span></h2>
+            <h2 class="title">No-reference perceptual CT image quality assessment based on a self-supervised learning framework <span class="category journal">Journal</span><span class="category link"><a href="https://doi.org/10.1088/2632-2153/aca87d">Paper</a></span></h2>
             <p class="description">This is the description of Publication 2. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+        </div>
+    </div>
+
+    <div class="publication">
+        <img src="MICCAI2022.png" alt="MICCAI2022" class="photo">
+        <div class="details">
+            <h2 class="title">Deep denoising network for x-ray fluoroscopic image sequences of moving objects <span class="category conference">Conference</span><span class="category link"><a href="https://doi.org/10.1007/978-3-031-17247-2_10">Paper</a></span></h2>
+            <p class="author">Wonjin Kim, Wonkyeong Lee, Sun-Young Jeon, Nayeon Kang, Geonhui Jo, Jang-Hwan Choi; Machine Learning for Medical Image Reconstruction. MLMIR 2022. Lecture Notes in Computer Science, vol 13587; Held in Conjunction with MICCAI 2022.</p>
         </div>
     </div>
     
     <div class="publication">
-        <img src="School.jpg" alt="Publication 3" class="photo">
+        <img src="SPIE.png" alt="SPIE" class="photo">
         <div class="details">
-            <h2 class="title">Publication 3<span class="category conference">Conference</span></h2>
-            <p class="description">This is the description of Publication 3. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-        </div>
+            <h2 class="title">Performance evaluation of image quality metrics for perceptual assessment of low-dose computed tomography images <span class="category conference">Conference</span></span><span class="category honor">Best Poster Award</span><span class="category link"><a href="https://doi.org/10.1117/12.2612541">Paper</a></h2>
+            <p class="author">Wonkyeong Lee, Eunbyeol Cho, Wonjin Kim, Jang-Hwan Choi; Proc. SPIE 12035, Medical Imaging 2022: Image Perception, Observer Performance, and Technology Assessment, 1203515 (4 April 2022)</p>
+            <p class="description">test</p>        </div>
     </div>
+
+    <footer>
+        <p>&copy; 2023 Wonkyeong Lee's Website. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
