@@ -2,16 +2,6 @@
 <html>
 <head>
     <title>Fun Facts</title>
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-20ZFQ0MBQR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-20ZFQ0MBQR');
-    </script>
-    
     <style>
         /* CSS styles for the header */
         header {
@@ -36,6 +26,33 @@
         /* CSS styles for the sections */
         section {
             padding: 20px;
+            display: flex; /* Display children as flex items */
+            flex-direction: row; /* Align items in a row */
+            flex-wrap: wrap; /* Allow items to wrap to a new line if needed */
+            justify-content: space-between; /* Space items evenly */
+        }
+
+        /* CSS styles for the post album */
+        .post {
+            width: 30%; /* Adjust the width as needed to fit three posts in one line */
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .post img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 0px;
+            margin-bottom: 10px;
+        }
+
+        .post p {
+            font-size: 16px;
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -53,10 +70,21 @@
     </header>
     
     <section>
-        <h2>My Website!</h2>
-        <p>Despite having no prior knowledge in HTML, I built this website from scratch using ChatGPT.</p>
-    </section>
+        <div class="post">
+                <img src="ChatGPT.png" alt="ChatGPT">
+            <p>Despite having no prior knowledge in HTML, I built this website from scratch using ChatGPT.</p>
+        </div>
 
+        <div class="post">
+                <img src="Kunni_with_innocent_face.jpg" alt="Post 2" width="400" height="400">
+            <p>I have a cat named Kunni. Look at her innocent face.</p>
+        </div>
+
+        <div class="post">
+                <img src="Kunni_segmentation.png" alt="Post 3">
+            <p>Which line should I use for segmenting Kunni? The red one (Kunni) or the yellow one (Fake Kunni)?</p>
+        </div>
+    </section>
     <footer>
         <p>&copy; 2023 Wonkyeong Lee's Website. All rights reserved.</p>
     </footer>
